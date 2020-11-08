@@ -3,12 +3,14 @@
   <TodoList />
 </template>
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TodoList from "./components/TodoList.vue";
+import TodoForm from "./components/TodoList.vue";
 
 export default {
   name: "App",
   components: {
-    TodoList
+    TodoList,
+    TodoForm
   }
 };
 </script>
