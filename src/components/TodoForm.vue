@@ -34,6 +34,17 @@ export default {
       createdDate: "",
       importance: null
     };
+  },
+  methods: {
+    onSubmit() {
+      let todo = {
+        title: this.title,
+        description: this.description,
+        name: this.name,
+        importance: this.importance
+      };
+      this.$emit("todo-item", todo);
+    }
   }
 };
 </script>
