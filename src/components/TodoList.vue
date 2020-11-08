@@ -9,6 +9,11 @@ export default {
   name: "TodoList",
   components: {
     TodoItem
+  },
+  data() {
+    return {
+      todos: []
+    };
   }
 };
 </script>

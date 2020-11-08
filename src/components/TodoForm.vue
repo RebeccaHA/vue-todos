@@ -1,9 +1,16 @@
 <template>
   <div>
     <form @submit.prevent="onSubmit">
-      <input id="name" v-model="name" />
+      <label for="title">Title</label>
+      <br />
+      <input id="title" v-model="title" />
+      <br />
+      <label for="description">Description</label>
       <br />
       <textarea id="description" v-model="description"></textarea>
+      <br />
+      <label for="importance">Importance</label>
+      <p>Please select the level of importance</p>
       <select id="importance" v-model="importance">
         <option>1</option>
         <option>2</option>
