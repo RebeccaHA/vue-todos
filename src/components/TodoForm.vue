@@ -31,7 +31,6 @@ export default {
     return {
       title: "",
       description: "",
-      name: "",
       createdDate: "",
       importance: null
     };
@@ -41,7 +40,6 @@ export default {
       let todo = {
         title: this.title,
         description: this.description,
-        name: this.name,
         importance: this.importance
       };
       this.$emit("todo-item", todo);
