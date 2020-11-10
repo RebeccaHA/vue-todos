@@ -14,14 +14,10 @@ export default {
   components: {
     TodoItem
   },
-  data() {
-    return {
-      todos: []
-    };
-  },
-  methods: {
-    addTodo(todo) {
-      this.todos.push(todo);
+  props: {
+    todos: {
+      type: Array,
+      required: true
     }
   }
 };

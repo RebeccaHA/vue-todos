@@ -1,8 +1,8 @@
 
 <template>
   <div>
-    <TodoList />
-    <TodoForm />
+    <TodoList :todos="this.todos" />
+    <TodoForm @add-todo="addTodo" />
   </div>
 </template>
 <script>
@@ -14,6 +14,16 @@ export default {
   components: {
     TodoList,
     TodoForm
+  },
+  data() {
+    return {
+      todos: []
+    };
+  },
+  methods: {
+    addTodo(todo) {
+      this.todos.push(todo);
+    }
   }
 };
 </script>
