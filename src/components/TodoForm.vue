@@ -18,6 +18,7 @@
         <option>4</option>
         <option>5</option>
       </select>
+      <input type="submit" value="submit" />
     </form>
   </div>
 </template>
