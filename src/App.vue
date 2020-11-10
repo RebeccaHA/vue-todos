@@ -1,8 +1,7 @@
-
 <template>
   <div>
-    <TodoList :todos="this.todos" />
-    <TodoForm @add-todo="addTodo" />
+    <TodoList :todos="todos" />
+    <TodoForm @todo-item="addTodo(todo)" />
   </div>
 </template>
 <script>
@@ -23,8 +22,8 @@ export default {
   methods: {
     addTodo(todo) {
       this.todos.push(todo);
+      console.log("adding", todo);
     }
   }
 };
 </script>
-

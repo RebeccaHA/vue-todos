@@ -1,8 +1,7 @@
-
 <template>
   <ul>
-    <li v-for="(todo,index) in todos" :key="index">
-      <TodoItem @todo-item="addTodo" :todo="todo" />
+    <li v-for="(todo, index) in todos" :key="index">
+      <TodoItem :todo="todo" />
     </li>
   </ul>
 </template>
@@ -22,4 +21,3 @@ export default {
   }
 };
 </script>
-

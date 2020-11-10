@@ -45,6 +45,7 @@ export default {
         importance: this.importance
       };
       this.$emit("todo-item", todo);
+      console.log("submitting", todo);
     }
   }
 };
