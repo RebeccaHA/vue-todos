@@ -1,7 +1,7 @@
 <template>
   <div>
     <TodoList :todos="todos" />
-    <TodoForm @todo-item="addTodo(todo)" />
+    <TodoForm @todo-item="addTodo" />
   </div>
 </template>
 <script>
