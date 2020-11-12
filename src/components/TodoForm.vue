@@ -42,8 +42,11 @@ export default {
         description: this.description,
         importance: this.importance
       };
-      this.$emit("todo-item", todo);
-      console.log("submitting", todo);
+      this.$emit("todo-item", todo),
+        (this.title = ""),
+        (this.description = ""),
+        (this.createdDate = ""),
+        (this.importance = null);
     }
   }
 };
